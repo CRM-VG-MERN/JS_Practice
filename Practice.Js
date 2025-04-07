@@ -30,9 +30,28 @@ let Con_array = Array1.concat(Array2.concat(Array3));
 console.log("Concatenated Array", Con_array);
 document.getElementById("fourthanswer").innerText = " Answer:  " + Con_array;
 
+let S_Array = [3, 1, 4, 1, 5];
+let Sort_array = S_Array.sort();
+console.log("Sorted Number:", Sort_array);
 
-let S_Array=[3, 1, 4, 1, 5];
-let Sort_array= S_Array.sort();
-console.log("Sorted Number:",Sort_array); 
+document.getElementById("fifthanswer").innerText = "Answer:  " + Sort_array;
 
-document.getElementById ("fifthanswer").innerText = "Answer:  "+ Sort_array;
+//1. Reverse a String
+
+let String_Re = "Hello";
+let Output_Sting = String_Re.split('').reverse();
+console.log("Reverse String : ", Output_Sting);
+document.getElementById("Str_1stAnswer").innerText = "Answer:  " + Output_Sting;
+
+//2. Check Palindrome
+
+
+function check (String){
+ let reverse= String.split('').reverse().join('');
+ return reverse==String;
+  }
+  check('racecar')
+  console.log(check('racecar'));
+
+
+  
